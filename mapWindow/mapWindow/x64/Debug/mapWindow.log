@@ -1,0 +1,22 @@
+﻿  TrackManager.cpp
+D:\MS Assignments\Engineering Computation\mapWindow\mapWindow\TrackManager.cpp(26,12): warning C4309: 'argument': truncation of constant value
+D:\MS Assignments\Engineering Computation\mapWindow\mapWindow\TrackManager.cpp(107,18): warning C4305: '*=': truncation from 'double' to 'float'
+D:\MS Assignments\Engineering Computation\mapWindow\mapWindow\TrackManager.cpp(109,18): warning C4305: '/=': truncation from 'double' to 'float'
+D:\MS Assignments\Engineering Computation\mapWindow\mapWindow\TrackManager.cpp(111,17): warning C4244: '*=': conversion from 'const _Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+D:\MS Assignments\Engineering Computation\mapWindow\mapWindow\TrackManager.cpp(113,17): warning C4244: '/=': conversion from 'const _Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+D:\MS Assignments\Engineering Computation\mapWindow\mapWindow\TrackManager.cpp(230,32): warning C4305: '*=': truncation from 'double' to 'float'
+D:\MS Assignments\Engineering Computation\mapWindow\mapWindow\TrackManager.cpp(232,33): warning C4305: '/=': truncation from 'double' to 'float'
+D:\MS Assignments\Engineering Computation\mapWindow\mapWindow\TrackManager.cpp(243,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\MS Assignments\Engineering Computation\mapWindow\mapWindow\TrackManager.cpp(243,15): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\MS Assignments\Engineering Computation\mapWindow\mapWindow\TrackManager.cpp(248,9): warning C4101: 'red': unreferenced local variable
+D:\MS Assignments\Engineering Computation\mapWindow\mapWindow\TrackManager.cpp(248,21): warning C4101: 'blue': unreferenced local variable
+D:\MS Assignments\Engineering Computation\mapWindow\mapWindow\TrackManager.cpp(248,14): warning C4101: 'green': unreferenced local variable
+  mapWindow.vcxproj -> D:\MS Assignments\Engineering Computation\mapWindow\x64\Debug\mapWindow.exe
