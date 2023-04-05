@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/emili/source/repos/FanFeast/Engineering_Computation
+# Install script for directory: C:/Users/mukul/source/repos/FanFeast/Engineering_Computation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/emili/Source/Repos/FanFeast/Engineering_Computation/out/install/x64-Release")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/mukul/Source/Repos/FanFeast/Engineering_Computation/out/install/x64-Release")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/emili/source/repos/FanFeast/Engineering_Computation/out/build/x64-Release/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/mukul/source/repos/FanFeast/Engineering_Computation/out/build/x64-Release/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

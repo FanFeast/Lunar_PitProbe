@@ -2,11 +2,11 @@ cmake_minimum_required(VERSION 3.13)
 
 project(sitesearch)
 set(CMAKE_CXX_STANDARD 20)
-set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "C:/Users/emili/source/repos/FanFeast/Engineering_Computation/ext/Eigen3/cmake" )
-set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "C:/Users/emili/source/repos/FanFeast/Engineering_Computation/cmake" )
-set( EMBREE_LOCATION "C:/Users/emili/source/repos/FanFeast/Engineering_Computation/ext/embree 3.0")
-set( CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} "C:/Users/emili/source/repos/FanFeast/Engineering_Computation/ext/Eigen3" )
-set( CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} "C:/Users/emili/source/repos/FanFeast/Engineering_Computation/ext/embree 3.0/lib/cmake/embree-3.13.5" )
+set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "C:/Users/mukul/source/repos/FanFeast/Engineering_Computation/ext/Eigen3/cmake" )
+set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "C:/Users/mukul/source/repos/FanFeast/Engineering_Computation/cmake" )
+set( EMBREE_LOCATION "C:/Users/mukul/source/repos/FanFeast/Engineering_Computation/ext/embree 3.0")
+set( CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} "C:/Users/mukul/source/repos/FanFeast/Engineering_Computation/ext/Eigen3" )
+set( CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} "C:/Users/mukul/source/repos/FanFeast/Engineering_Computation/ext/embree 3.0/lib/cmake/embree-3.13.5" )
 
 find_package(Eigen3)
 
@@ -28,6 +28,6 @@ endif()
 MESSAGE ("Source path: ${PROJECT_SOURCE_DIR}")
 
 #add_executable(${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/src/main.cpp "ext/pixel2latlon.h")
-add_executable(${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/src/main.cpp)
+add_executable(${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/src/main.cpp ) #"ext/A_star.h"
 target_include_directories(${PROJECT_NAME} PUBLIC src/ ext/ ${EIGEN3_INCLUDE_DIR} ${EMBREE_INCLUDE_DIR} )
 target_link_libraries(${PROJECT_NAME} ${EMBREE_LIBRARY} OpenMP::OpenMP_CXX)

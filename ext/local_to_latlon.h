@@ -12,6 +12,8 @@ const double dtm_height = 65835.0;
 const double model_origin_x = 11096.52;
 const double model_origin_y = 33410.65;
 
+const float MAP_PITCH = 1.00; // meters
+
 void local_to_latlon(double x, double y, double& lat, double& lon) {
     double x_in_dtm = x + model_origin_x;
     double y_in_dtm = y + model_origin_y;
@@ -28,11 +30,20 @@ void latlon_to_local(double lat, double lon, double& x, double& y) {
     y = y_in_dtm - model_origin_y;
 }
 
-void latlon_to_grid(double lat, double lon, int numRows, double cell_pitch, int& i, int& j) {
+void latlon_to_grid(double lat, double lon, int numRows, int& i, int& j) {
     
     double x, y;
     latlon_to_local(lat, lon, x, y);
 
-    i = numRows - (int)(y / cell_pitch);
-    j = (int)(x / cell_pitch);
+    i = numRows - (int)(y / MAP_PITCH);
+    j = (int)(x / MAP_PITCH);
+}
+
+void grid_to_latlon(int i, int j, int numRows, double& lat, double& lon) {
+
+    double x, y;
+    y = (numRows - i) * MAP_PITCH;
+    x = j * MAP_PITCH;
+
+    local_to_latlon(x, y, lat, lon);
 }
