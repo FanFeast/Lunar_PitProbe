@@ -14,15 +14,15 @@ How we did it?
 Using C++, we generated a slope map from the 3D ply fly of the lunar surface. The depth map data was used to generate a Line of Sight Map (LOS Map) that represented all the points on the map where the lander would be able to communicate with the rover. The LOS Map had categories, and we generated a LOS Aggregate Map for the landing site to ensure that the entire pit was covered by the line of sight. We employed the A-Star algorithm to generate the best path for the rover to follow. We generated 36 sites around the pit space at 10-degree intervals and found the optimal sites that could be covered no matter where the lander landed in its landing circle. We used a complex G-score function that took into account different parameters and assigned penalties to generate a ranking of landing sites for the rover.
 
 <p align="center">
-  <img width="824" alt="Lunar_project_output" src="https://user-images.githubusercontent.com/47504920/230153847-c7737937-af09-4306-8772-2f0a46b5be17.png">
+  <img alt="Lunar_project_Site_Evaluator_Working" src="https://user-images.githubusercontent.com/47504920/230153940-57681acb-95b6-4d7c-981e-102dd3859e09.gif">
 </p>
+
 
 Results:
 The algorithm was able to find the best landing site and generate an optimal path for the rover to travel. An overlay extension was created to overlay the generated path with the actual image from the Moon, making it easier to visualize.
 
-<p align="center">
 ![Lunar_project_Site_Evaluator_Working](https://user-images.githubusercontent.com/47504920/230153940-57681acb-95b6-4d7c-981e-102dd3859e09.gif)
 
-
+<p align="center">
   <img width="358" alt="Lunar_project_overlay" src="https://user-images.githubusercontent.com/47504920/230153960-840e40ef-730e-4e69-bcf5-8887ed5f6883.png">
 </p>
