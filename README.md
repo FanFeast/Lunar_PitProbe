@@ -21,8 +21,6 @@ Using C++, we generated a slope map from the 3D ply fly of the lunar surface. Th
 Results:
 The algorithm was able to find the best landing site and generate an optimal path for the rover to travel. An overlay extension was created to overlay the generated path with the actual image from the Moon, making it easier to visualize.
 
-![Lunar_project_Site_Evaluator_Working](https://user-images.githubusercontent.com/47504920/230153940-57681acb-95b6-4d7c-981e-102dd3859e09.gif)
-
 <p align="center">
   <img width="358" alt="Lunar_project_overlay" src="https://user-images.githubusercontent.com/47504920/230153960-840e40ef-730e-4e69-bcf5-8887ed5f6883.png">
 </p>
