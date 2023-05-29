@@ -1,7 +1,9 @@
 # Lunar Landing Site Evalution and Path Planning
 
 ## USAGE
-1. 
+1. Make changes to the path address to the main function for the library location in 'ext' folder.
+2. Put the .ply file in the meshes folder.
+3. Any new functions and inheritance inssue can be fixed in 'src' folder.
 
 
 ## Introduction.
