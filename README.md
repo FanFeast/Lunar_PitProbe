@@ -1,4 +1,4 @@
-# Lunar Landing Site Evalution and Path Planning
+# Lunar PitProbe: Auto Landing & Efficient Rover Routing 
 
 ## USAGE
 1. Make changes to the path address to the main function for the library location in 'ext' folder.
